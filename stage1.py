@@ -52,9 +52,9 @@ from PIL import Image
 from multiprocessing.pool import ThreadPool
 
 print(jax.local_devices())
-if len(jax.local_devices())!=8:
-  print("ERROR: need 8 v100 GPUs")
-  1/0
+# if len(jax.local_devices())!=8:
+#   print("ERROR: need 8 v100 GPUs")
+#   1/0
 weights_dir = "weights"
 samples_dir = "samples"
 if not os.path.exists(weights_dir):
